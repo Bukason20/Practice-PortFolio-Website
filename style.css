@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+/* ---------------------------------------GENERAL STYLES---------------------------------- */
+body{
+    scroll-behavior: smooth;
+}
+section {
+    padding: 4rem;
+}
+.section-title h5{
+    color: rgb(176, 180, 145);
+    margin-bottom: 0.3rem !important;
+    font-size: 1rem;
+    text-align: center;
+}
+.section-title h1{
+    width: fit-content;
+    font-size: 2.5rem;
+    position: relative;
+    margin: 0.5rem auto 1rem;
+}
+.section-title h1::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1rem;
+    height: 0.5rem;
+    background-color: rgb(148, 151, 122);
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.section-title h1::after{
+    content: "";
+    display: block;
+    width: 60%;
+    position: absolute;
+    height: 0.2rem;
+    background-color: rgb(148, 151, 122);
+    top: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*--------------------------------------------------------------------------HEADER----------------------- */
+
+header{
+    /* height: 100vh; */
+    background-color: rgb(227, 228, 232);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    position: -webkit-sticky;
+    width: 100%;
+    z-index: 1000;
+    padding: 1rem 4rem;
+    /* box-shadow: 2px 8px 20px -1px rgba(0,0,0,0.75); */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.navlinks {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+.navlinks li a{
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    height: 100%;
+}
+.navlinks li a:hover{
+    color: rgb(176, 180, 145);
+}
+.navlinks li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0.2rem;
+    background-color: rgb(176, 180, 145);
+    margin: auto;
+    transition: all 500ms ease-in-out;
+    
+}
+.navlinks li a:hover::after{
+    width: 100%;
+}
+.hero-section {
+    padding: 3rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+}
+.hero-contents{
+    /* background-color: orange; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.hello{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgb(176, 180, 145);
+}
+.hello-line{
+    content: "";
+    display: block;
+    width: 25rem;
+    height: 0.1rem;
+    background-color: black;
+}
+
+.hero-img {
+    width: 500px;
+    transform: translateY(100px);
+}
+.hero-img img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    
+}
+.hero-btns{
+    margin: 1rem 0;
+    display: flex;
+    gap: 1rem;
+}
+.btn1, .btn2 {
+   padding: 0.5rem 1rem; 
+   border: 1px solid rgb(176, 180, 145);
+   font-weight: bold;
+   border-radius: 0.4rem;
+}
+.btn1{
+    background-color: rgb(148, 151, 122);
+    color: white;
+    transition: all 400ms ease-in-out;
+}
+.btn1:hover{
+    background-color: white ;
+    color: rgb(148, 151, 122);
+}
+.btn2{
+    background-color: white ;
+    color: rgb(148, 151, 122);
+    transition: all 400ms ease-in-out;
+}
+.btn2:hover{
+    background-color: rgb(148, 151, 122);
+    color: white;
+}
+.hero-section h3 {
+    color: rgb(176, 180, 145);
+}
+
+/* ---------------------------------------MAIN PART--------------------------------------- */
+main {
+    /* height: 100vh; */
+}
+/* -------------------------------------ABOUT ME SECTION-------------------------------------- */
+#about-me-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 0.5rem;
+    padding: 6rem 4rem;
+    /* padding-bottom: 0.5rem; */
+    /* background-color: blue; */
+    /* overflow: hidden; */
+}
+.about-me-img{
+    background-color: white;
+    margin-left: 4rem;
+    width: 350px;
+    /* height: 350px; */
+    padding: 0 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.about-me-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.about-me-title{
+    width: fit-content;
+}
+.about-me-title h5{
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+}
+.about-me-text{
+    margin: 1rem 0 0.2;
+    color: rgb(148, 151, 122);
+    line-height: 1.3rem;
+    letter-spacing: 0.09rem;
+}
+.identity {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.property p, .values p{
+    margin: 1rem 0;
+}
+.values {
+    color: rgb(148, 151, 122);
+}
+/* ---------------------------------------SERVICES-SECTION--------------------------- */
+#services-section{
+    background-color: rgb(248, 249, 250);
+}
+.services{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+    /* background-color: green; */
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+.service{
+    background-color: white;
+    padding: 3rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 400px;
+    margin: auto;
+    border-radius: 0.5rem;
+    transition: all 400ms ease-in-out;
+    text-align: center;
+    color: rgb(84, 85, 73);
+    overflow: visible;
+    position: relative;
+    
+}
+.service:hover{
+    background-color: rgb(148, 151, 122);
+    color: white;
+    
+}
+.service-icon{
+    width: 50px;
+    height: 50px;
+    /* transform: translateY(-20px); */
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(84, 85, 73);
+    padding: 0.4rem;
+    border-radius: 50%;
+    transition: all 400ms ease-in-out;
+}
+.service:hover > .service-icon {
+    background-color: white;
+}
+.service-icon img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.service .title{
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+}
+.service .title::after{
+    content: "";
+    display: block;
+    width: 2.5rem;
+    height: 0.1rem;
+    background-color: rgb(113, 113, 114);
+    margin: 1rem auto 0;
+    transition: all 400ms ease-in-out;
+}
+.service:hover > .title::after{
+    background-color: black;
+}
+/* --------------------------------------------------------PROJECTS SECTION------------------------------ */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem
+}
