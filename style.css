@@ -405,7 +405,11 @@ main {
     object-fit: cover;
 }
 .project-title{
-    margin: 1rem 0;
+    margin: 1rem 0 0.1rem;
+}
+.project-title p{
+    font-size: 0.9rem;
+    margin: 0.3rem 0;
 }
 .project-btns{
     display: flex;
