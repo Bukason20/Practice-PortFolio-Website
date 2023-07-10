@@ -668,12 +668,30 @@ main {
     .service {
         width: 300px;
     }
+    /* -------------------------------SKILLS SECTION---------------------------- */
+    .skills-section{
+    }
+    .skills{
+        gap: 1rem;
+    }
+    .skill1, .skill2, .skill3, .skill4 {
+        position: relative;
+        height: 4rem;
+     }
+    .skill-head{
+        font-size: 0.9rem;
+    }
+    
 
     /* ----------------------------PROJECTS SECTION------------------------------- */
     .projects{
         grid-template-columns: repeat(1, 1fr);
         
     }
+    /* .project-img{
+        width: 250px;
+        height: 150px;
+    } */
 
     /* ------------------------------FOOTER SECTION----------------------------------- */
     #footer-section{
@@ -684,5 +702,18 @@ main {
     }
     .footer-links{
         margin: 0;
+    }
+}
+@media screen and (max-width: 400px){
+    .service {
+        width: 250px;
+    }
+    .project-img{
+        width: 250px;
+        height: 150px;
+    }
+    .skill-head{
+        font-size: 0.8rem;
+        font-weight: bold;
     }
 }
