@@ -668,4 +668,21 @@ main {
     .service {
         width: 300px;
     }
+
+    /* ----------------------------PROJECTS SECTION------------------------------- */
+    .projects{
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+
+    /* ------------------------------FOOTER SECTION----------------------------------- */
+    #footer-section{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer-about, .footer-link, .footer-newsletter{
+        margin: 0;
+    }
+    .footer-links{
+        margin: 0;
+    }
 }
