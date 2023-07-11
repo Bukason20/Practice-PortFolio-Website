@@ -586,7 +586,7 @@ main {
 }
 .socials{
     /* background-color: saddlebrown; */
-    margin-left: 10rem;
+    margin-left: auto;
     width: 80%;
     display: flex;
     align-items: flex-start;
@@ -672,6 +672,14 @@ main {
     .projects{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    /* -------------------------------------CONTACT PAGE----------------------------- */
+   .socials{
+       margin-left: auto;
+   }
+   .social{
+       gap: 1rem;
+   }
 }
 
 /* --------------------------------MEDIA QUERY FOR SMALL DEVICES-------------------------------------------------- */
