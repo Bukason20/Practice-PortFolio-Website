@@ -1,7 +1,19 @@
+const burger = document.querySelector(".burger")
+const navLinks = document.querySelector(".navlinks")
 const navBar = document.querySelector(".navbar")
 const navLinksHash = document.querySelectorAll(".navlinks a")
+const close = document.querySelector("#close")
 const activePage = window.location.hash
 const sections = document.querySelectorAll("section")
+
+
+// show navbar
+burger.addEventListener("click", () => {    
+    navLinks.classList.add("active")
+})
+close.addEventListener("click", () => {
+    navLinks.classList.remove("active")
+})
 
 // Select Navigation link when the page is onLoad and When it is  Clicked
 navLinksHash.forEach((link) => {

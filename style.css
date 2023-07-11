@@ -78,6 +78,9 @@ header{
     width: 100%;
     height: 100%;
 }
+#close{
+    display: none;
+}
 .navlinks li a:hover{
     color: rgb(176, 180, 145);
 }
@@ -115,6 +118,12 @@ header{
 }
 .contact-link:hover::after{
     width: 0px !important;
+}
+.burger{
+    display: none;
+}
+.burger img{
+    height: 1.5rem;
 }
 
 /* --------------------------------------------------------------HERO-SECTION------------------------------------------------------ */
@@ -609,6 +618,39 @@ main {
     section{
         padding: 4rem 2rem 2rem;
     }
+    /* ------------------------NAVBAR SECTION--------------------- */
+    .navbar{
+        padding: 1rem 2rem;
+        overflow: visible;
+    }
+    .navlinks{
+        /* display: block; */
+        flex-direction: column;
+        position: absolute;
+        height: 100vh;
+        width: 50%;
+        top: 0;
+        right: 0;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition: all 400ms ease;
+        transform: translateX(150%);
+    }
+    .navlinks.active{
+        transform: translateX(0);
+    }
+    #close{
+        /* background-color: blue; */
+        display: block;
+        margin: 1rem auto 0 1rem;
+    }
+    #close img{
+        height: 1rem;
+        
+    }
+    .burger{
+        display: block;
+    }
     #hero-section{
         grid-template-columns: repeat(1, 1fr);
         padding: 6rem 2rem 0;
@@ -688,11 +730,6 @@ main {
         grid-template-columns: repeat(1, 1fr);
         
     }
-    /* .project-img{
-        width: 250px;
-        height: 150px;
-    } */
-
     /* ------------------------------FOOTER SECTION----------------------------------- */
     #footer-section{
         grid-template-columns: repeat(1, 1fr);
