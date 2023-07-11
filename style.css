@@ -581,6 +581,9 @@ main {
     background-color: white;
     color: rgb(148, 151, 122);
 }
+.contact-home{
+    display: none;
+}
 .socials{
     /* background-color: saddlebrown; */
     margin-left: 10rem;
@@ -612,6 +615,7 @@ main {
 .social-text a{
     font-size: 0.9rem;
 }
+
 
 /* --------------------------------MEDIA QUERY FOR SMALL DEVICES-------------------------------------------------- */
 @media screen and (max-width: 600px){
@@ -750,6 +754,13 @@ main {
     }
     .socials{
         margin-left: 0;
+    }
+    .contact-home{
+        display: block;
+        cursor:pointer;
+    }
+    .contact-home a{
+        text-decoration: none;
     }
 }
 @media screen and (max-width: 400px){
