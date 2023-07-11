@@ -616,6 +616,63 @@ main {
     font-size: 0.9rem;
 }
 
+/* -----------------------------------MEDIA QUERY FOR TABLETS---------------------------------------------- */
+@media screen and (max-width: 1024px){
+    section{
+        padding: 2rem;
+    }
+
+    /* -------------------------------HERO SECTION------------------------------------------- */
+    #hero-section{
+        padding: 2rem;
+        height: fit-content;
+        gap: 2rem;
+    }
+    .hero-img{
+        /* background-color: green; */
+        width: 450px;
+    }
+    .hero-img img{
+        display: block;
+        
+    }
+    .hello{
+        gap: 0.5rem
+    }
+    .hello h2{
+        font-size: 1.2rem;
+    }
+    .hello-line{
+        width: 8rem;
+    }
+    .btn1, .btn2{
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    /* -----------------------------------------ABOUT ME SECTION------------------------------------- */
+    #about-me-section{
+        padding:  4rem 2rem;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .about-me-img{
+        margin: auto;
+    }
+    .about-me-title{
+        text-align: center;
+        margin: 1rem auto;
+    }
+
+    /* --------------------------------------SERVICES SECTION-------------------------------- */
+    .service{
+        width: 320px;
+    }
+
+    /* -----------------------------------------PROJECT SECTION--------------------------------- */
+    .projects{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 /* --------------------------------MEDIA QUERY FOR SMALL DEVICES-------------------------------------------------- */
 @media screen and (max-width: 600px){
@@ -676,7 +733,7 @@ main {
         font-size: 1.2rem;
     }
     .hello-line{
-        width: 15rem;
+        width: 12rem;
     }
 
     /* -----------------------------ABOUT ME SECTION-------------------------- */
