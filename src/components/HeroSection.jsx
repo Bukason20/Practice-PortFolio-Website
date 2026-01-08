@@ -2,6 +2,7 @@ import React from "react";
 import { ChevronDown } from "lucide-react";
 import { scrollToSection } from "../utils/scrollToSection";
 import { stats } from "../data/statsData";
+import { ProfileImg } from "../assets";
 
 export default function HeroSection() {
   return (
@@ -88,7 +89,8 @@ export default function HeroSection() {
               <div className="relative bg-gradient-to-br from-purple-500 to-pink-500 rounded-3xl p-1 overflow-hidden">
                 <div className="bg-black rounded-3xl overflow-hidden aspect-square flex items-center justify-center">
                   <div className="w-full h-full bg-gradient-to-br from-purple-600 via-blue-600 to-pink-600 flex items-center justify-center relative overflow-hidden">
-                    <div className="text-9xl animate-bounce">👨‍💻</div>
+                    <img src={ProfileImg} alt="" />
+                    {/* <div className="text-9xl animate-bounce">👨‍💻</div> */}
 
                     {/* Floating elements */}
                     <div
