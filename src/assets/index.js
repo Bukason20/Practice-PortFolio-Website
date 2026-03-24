@@ -4,4 +4,5 @@ export { default as Feedfit } from "./images/feedfit.png";
 export { default as DoubleP } from "./images/doubleP.png";
 export { default as Acof } from "./images/acof.png";
 export { default as LaundryPro } from "./images/laundryPro.png";
+export { default as Cyniix } from "./images/cyniix.png";
 export { default as ProfileImg } from "./images/profileImg.jpeg";

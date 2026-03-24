@@ -1,20 +1,21 @@
 import React from "react";
+import { Lightbulb, BookOpen, TrendingUp } from "lucide-react";
 import { skills } from "../data/skillsData";
 
 export default function AboutSection() {
   const features = [
     {
-      icon: "💡",
+      icon: <Lightbulb size={32} className="text-purple-400" />,
       title: "Creative Problem Solving",
       desc: "Breaking down complex problems into elegant solutions",
     },
     {
-      icon: "🎓",
+      icon: <BookOpen size={32} className="text-purple-400" />,
       title: "Knowledge Sharing",
       desc: "Passionate about teaching and mentoring developers",
     },
     {
-      icon: "🚀",
+      icon: <TrendingUp size={32} className="text-purple-400" />,
       title: "Continuous Learning",
       desc: "Always exploring new technologies and frameworks",
     },
@@ -43,7 +44,7 @@ export default function AboutSection() {
               key={idx}
               className="p-8 rounded-2xl border border-purple-500/20 bg-gradient-to-br from-purple-500/10 to-pink-500/10 hover:border-purple-400/50 transition-all duration-300 hover:transform hover:scale-105"
             >
-              <p className="text-5xl mb-4">{item.icon}</p>
+              <div className="mb-4">{item.icon}</div>
               <h3 className="text-xl font-bold mb-3">{item.title}</h3>
               <p className="text-gray-400">{item.desc}</p>
             </div>
@@ -84,8 +85,7 @@ export default function AboutSection() {
                 key={idx}
                 className="p-6 rounded-xl border border-purple-500/20 bg-purple-500/5 hover:bg-purple-500/10 transition-colors"
               >
-                <p className="font-bold text-purple-400 mb-3 flex items-center gap-2">
-                  <span className="text-2xl">{skillGroup.icon}</span>
+                <p className="font-bold text-purple-400 mb-3">
                   {skillGroup.category}
                 </p>
                 <div className="flex flex-wrap gap-2">

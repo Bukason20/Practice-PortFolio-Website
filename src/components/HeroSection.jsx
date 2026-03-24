@@ -22,8 +22,8 @@ export default function HeroSection() {
           {/* Left Content */}
           <div className="space-y-8">
             <div>
-              <p className="text-purple-400 font-semibold mb-2 tracking-widest">
-                👋 WELCOME TO MY PORTFOLIO
+              <p className="text-purple-400 font-semibold mb-2 tracking-widest uppercase text-sm">
+                Welcome to my portfolio
               </p>
               <h1 className="text-6xl md:text-7xl font-black leading-tight mb-4">
                 Chukwuebuka
@@ -86,39 +86,28 @@ export default function HeroSection() {
               <div className="absolute -inset-8 bg-gradient-to-r from-purple-600 to-pink-600 rounded-3xl blur-3xl opacity-20 animate-pulse"></div>
 
               {/* Image frame */}
-              <div className="relative bg-gradient-to-br from-purple-500 to-pink-500 rounded-3xl p-1 overflow-hidden">
+              <div className="relative bg-gradient-to-br max-h-[500px] max-w-[500px] from-purple-500 to-pink-500 rounded-3xl p-1 overflow-hidden">
                 <div className="bg-black rounded-3xl overflow-hidden aspect-square flex items-center justify-center">
-                  <div className="w-full h-full bg-gradient-to-br from-purple-600 via-blue-600 to-pink-600 flex items-center justify-center relative overflow-hidden">
-                    <img src={ProfileImg} alt="" />
-                    {/* <div className="text-9xl animate-bounce">👨‍💻</div> */}
-
-                    {/* Floating elements */}
-                    <div
-                      className="absolute top-4 right-4 w-12 h-12 bg-white rounded-full flex items-center justify-center text-2xl animate-bounce"
-                      style={{ animationDelay: "0.2s" }}
-                    >
-                      ⚡
-                    </div>
-                    <div
-                      className="absolute bottom-8 left-4 w-10 h-10 bg-purple-400 rounded-full flex items-center justify-center text-xl animate-bounce"
-                      style={{ animationDelay: "0.4s" }}
-                    >
-                      💻
-                    </div>
+                  <div className="w-full bg-gradient-to-br from-purple-600 via-blue-600 to-pink-600 flex items-center justify-center relative overflow-hidden h-[800px]">
+                    <img
+                      src={ProfileImg}
+                      alt="Chukwuebuka Edward"
+                      className="w-full max-h-[500px] object-cover"
+                    />
                   </div>
                 </div>
               </div>
 
               {/* Badge */}
               <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-purple-500 to-pink-500 px-6 py-2 rounded-full text-sm font-bold whitespace-nowrap z-20">
-                Available for Work ✨
+                Available for Work
               </div>
             </div>
           </div>
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
           <button
             onClick={() => scrollToSection("about")}
             className="flex flex-col items-center gap-2 text-purple-400 hover:text-pink-400 transition-colors"
@@ -126,7 +115,7 @@ export default function HeroSection() {
             <span className="text-sm font-semibold">Scroll to explore</span>
             <ChevronDown size={24} />
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );
